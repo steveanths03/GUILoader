@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable GUI Components</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h2>Add Components</h2>
+            <button id="add-button" class="component-btn">Button</button>
+            <button id="add-input" class="component-btn">Input Field</button>
+            <button id="add-textarea" class="component-btn">Text Area</button>
+            <button id="add-select" class="component-btn">Dropdown</button>
+            <button id="add-checkbox" class="component-btn">Checkbox</button>
+            <button id="add-text" class="component-btn">Text Block</button>
+            <button id="add-image" class="component-btn">Image Placeholder</button>
+            
+            <div class="instruction">
+                <h3>Instructions</h3>
+                <p>1. Click on a component to add it to the canvas</p>
+                <p>2. Drag components to reposition</p>
+                <p>3. Use the resize handle (bottom-right corner) to resize</p>
+                <p>4. Double-click to edit content (where applicable)</p>
+            </div>
+        </div>
+        
+        <div class="main-area">
+            <div class="toolbar">
+                <button id="clear-all" class="action-btn">Clear All</button>
+                <button id="save-layout" class="action-btn">Save Layout</button>
+                <button id="load-layout" class="action-btn">Load Layout</button>
+            </div>
+            <div id="canvas" class="canvas">
+                <!-- Components will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
